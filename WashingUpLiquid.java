@@ -1,9 +1,9 @@
-class WashingUpliquid implements Item{
+class WashingUpLiquid implements Item{
 
 private String name;
 private int price;
 
-public WashingUpliquid(String name, int price){
+public WashingUpLiquid(String name, int price){
   this.name = name;
   this.price = price;
 }
