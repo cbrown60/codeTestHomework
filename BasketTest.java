@@ -45,5 +45,20 @@ public void totalPriceOfBasket(){
   assertEquals(500, basket.totalPrice());
 }
 
+@Test 
+public void containsThatItem(){
+  basket.addToBasket(washingUpliquid);
+  assertEquals("Hello", basket.containsTheItem());
+}
+
+@Test
+public void checkMoreThanOne(){
+  basket.addToBasket(washingUpliquid);
+  basket.addToBasket(washingUpliquid);
+  assertEquals(2, basket.moreThanOnce(washingUpliquid));
+}
+
+
+
 
 }

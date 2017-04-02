@@ -2,10 +2,12 @@ class WashingUpLiquid implements Item{
 
 private String name;
 private int price;
+// private boolean bogof;
 
 public WashingUpLiquid(String name, int price){
   this.name = name;
   this.price = price;
+  // this.bogof = bogof;
 }
 
 public String name(){
@@ -16,6 +18,13 @@ public String name(){
 public int price(){
   return this.price;
 }
+
+// public boolean bogof(){
+//   return this.bogof;
+// }
+
+
+
 
 
 }

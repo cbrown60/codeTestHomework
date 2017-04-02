@@ -3,6 +3,7 @@ public class Basket {
 
 private ArrayList<Item> cart;
 
+
 public Basket(){
   this.cart = new ArrayList<Item>();
 }
@@ -31,5 +32,41 @@ public int totalPrice(){
   }
   return counter;
 }
+
+public String containsTheItem(){
+ if (cart.contains ("washing up liquid"));
+      return "Hello";
+  
+}
+
+public String containsTheItem(Item product){
+ if (cart.contains (product));
+      return "Hello";
+  
+}
+
+
+public int moreThanOnce(Item items) 
+{
+    int count = 0;
+
+    for (Item item : cart){
+      if(items.name() == item.name())
+      count = count + 1;
+    }
+
+    return count;
+}
+
+
+public int bogof(Item items){
+  
+}
+
+
+
+
+
+
 
 }
