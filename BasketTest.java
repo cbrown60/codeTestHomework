@@ -8,7 +8,7 @@ WashingUpLiquid washingUpliquid;
 @Before
 public void before(){
   basket = new Basket();
-  washingUpliquid = new WashingUpLiquid("Daz", 250);
+  washingUpliquid = new WashingUpLiquid("Daz", 250, true);
 
 }
 
@@ -58,6 +58,12 @@ public void checkMoreThanOne(){
   assertEquals(2, basket.moreThanOnce(washingUpliquid));
 }
 
+@Test
+public void checkFinalPriceIsRight(){
+  basket.addToBasket(washingUpliquid);
+  basket.addToBasket(washingUpliquid);
+  assertEquals(250, basket.bogof(washingUpliquid));
+}
 
 
 

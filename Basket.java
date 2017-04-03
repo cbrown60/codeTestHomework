@@ -60,13 +60,20 @@ public int moreThanOnce(Item items)
 
 
 public int bogof(Item items){
-  
+
+int finalPrice = totalPrice() - items.price();
+if((moreThanOnce(items) == 2) && items.bogof() == true)
+return finalPrice;
+else if ((moreThanOnce(items) % 2 == 1) && items.bogof() == true)
+return finalPrice;
+else
+return totalPrice();
+
 }
 
-
-
-
-
+public int tenPercentOff(){
+  
+}
 
 
 }
